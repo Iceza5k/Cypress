@@ -87,7 +87,7 @@ describe('BKKAIR.123COUNTER', () => {
         cy.get('#MainContent_btnSumit').click()
     })
     it('BKKAIR.123COUNTER.TOT.PENDING', () => {
-        cy.get('#MainContent_txtAgentCode').type('TOT')
+        cy.get('#MainContent_txtAgentCode').type('')
         cy.get('#MainContent_btnSumit').click()
     })
 })
