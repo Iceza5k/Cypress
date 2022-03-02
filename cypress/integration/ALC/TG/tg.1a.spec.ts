@@ -74,3 +74,23 @@ describe('ThaiAirways.UnionPay', () => {
     cy.get('[type="checkbox"]').check()
   })
 })
+describe('ThaiAirways.AMEX', () => {
+  it.only('AMEX.Approve', () => {
+    cy.contains('AMADEUS Redirect Payment').click()
+    cy.get('#EXTERNAL_ID2').type("BKKH2TG")
+    cy.get('#AMOUNT').clear().type('1100')
+    cy.get('#AMOUNT_AIR').clear().type('1100')
+    cy.get('#AIR_AMOUNT1').clear().type('1100')
+    cy.get('#btnSubmit').click()
+    cy.get('#credit_card_number').type(Cypress.env('card4'))
+    cy.get('#credit_card_holder_name').click().type(Cypress.env('name'))
+    cy.get('#credit_card_expiry').type('1223')
+    cy.get('#credit_card_cvv').type('2234')
+    cy.get('#credit_card_issuing_bank_country').select('THAILAND')
+    cy.get('#credit_card_issuing_bank_name').type('AMEX')
+    cy.contains('Confirm Payment').click()
+    cy.get('#btnHideModal').click()
+    cy.get('Ul').contains('Approved').should('be.visible')
+  })
+
+})
