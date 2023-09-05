@@ -1,0 +1,34 @@
+{
+    "apiRequest": {
+        "requestMessageID": "",
+        "requestDateTime": "",
+        "language": "en-US"
+    },
+    "officeId": "demo3ds",
+    "orderNo": "",
+    "productDescription": "BOOM",
+    "paymentCategory": "ECOM",
+    "paymentType": "CC",
+    "channelCode": "WEBPAY",
+    "mcpFlag": "N",
+    "request3dsFlag": "Y",
+    "transactionAmount": {
+        "currencyCode": "THB",
+        "amount": "10.00",
+        "decimalPlaces": 2,
+        "amountText": "000000001000"
+    },
+    "notificationURLs": {
+        "confirmationURL": "-",
+        "failedURL": "-",
+        "cancellationURL": "-",
+        "backendURL": "-"
+    },
+    "autoRedirectDelayTimer": 60,
+    "customFieldList": [
+        {
+            "fieldName": "Cypress",
+            "fieldValue": "PRE-UI"
+        }
+    ]
+}

@@ -1,5 +1,0 @@
-{
-  "color": "red",
-  "id": 4,
-  "available": false
-}

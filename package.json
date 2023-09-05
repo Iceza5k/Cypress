@@ -1,23 +1,14 @@
 {
-  "name": "test-cy-2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:CI" :"cypress run"
-  },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@bahmutov/add-typescript-to-cypress": "^2.1.2",
-    "@types/jest": "^27.4.0",
-    "chai-uuid": "^1.0.6",
-    "cypress": "^9.5.0",
-    "node-xlsx": "^0.21.0",
-    "typescript": "^4.5.5"
+    "cypress": "^12.17.4"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 10 -d 'cypress/e2e/3-test/*'"
   },
   "dependencies": {
-    "uuid": "^8.3.2"
+    "cypress-parallel": "^0.13.0",
+    "uuid": "^9.0.0"
   }
 }
