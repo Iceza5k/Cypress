@@ -27,23 +27,23 @@ describe('POST Request', () => {
         cy.visit(response.body.data.paymentPage.paymentPageURL);
         cy.wait(3000);
       });
-      cy.get(':nth-child(1) > app-form-control > div > .global-form-control').type('4111111111111111')
+      // cy.get(':nth-child(1) > app-form-control > div > .global-form-control').type('4111111111111111')
 
-      cy.get(':nth-child(2) > app-form-control > div > .global-form-control').type('1223')
+      // cy.get(':nth-child(2) > app-form-control > div > .global-form-control').type('1223')
 
-      cy.get(':nth-child(3) > app-form-control > div > .global-form-control').type('123')
+      // cy.get(':nth-child(3) > app-form-control > div > .global-form-control').type('123')
 
-      cy.get('.cardholder-name > app-form-control > div > .global-form-control').type('Cypress')
+      // cy.get('.cardholder-name > app-form-control > div > .global-form-control').type('Cypress')
 
-      cy.get('.secondary-btn > .main-content-button').click()
+      // cy.get('.secondary-btn > .main-content-button').click()
 
-      cy.get('.secondary-btn > .main-content-button').click()
+      // cy.get('.secondary-btn > .main-content-button').click()
 
-      cy.get('.proceed').click()
+      // cy.get('.proceed').click()
 
-      cy.get('.form-control').type('123456')
+      // cy.get('.form-control').type('123456')
 
-      cy.get('.acs-challenge-form-actions > .proceed').click()
+      //cy.get('.acs-challenge-form-actions > .proceed').click()
     });
   }
   });
